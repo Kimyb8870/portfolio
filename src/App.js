@@ -1,11 +1,19 @@
 import React from "react";
+import AboutSection from "./sections/AboutSection";
+import ContactSection from "./sections/ContactSection";
+import HeroSection from "./sections/HeroSection";
+import SkillSection from "./sections/SkillSection";
+import WorkSection from "./sections/WorkSection";
 
 function App() {
   return (
-    <div>
-      <h1>포트폴리오 시작</h1>
-      <p>이따 저녁에 뭐먹지</p>
-    </div>
+    <>
+      <HeroSection />
+      <AboutSection />
+      <SkillSection />
+      <WorkSection />
+      <ContactSection />
+    </>
   );
 }
 
