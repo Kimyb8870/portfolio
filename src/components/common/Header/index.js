@@ -1,17 +1,38 @@
-import React from "react";
-import { StyledHeader, Wrapper } from "./styles/Header";
+import React, { useEffect, useState } from "react";
+import {
+  StyledHeader,
+  Wrapper,
+  LinkItem,
+  StyledCloseIcon,
+  StyledMenuIcon,
+  LinkList,
+} from "./styles/Header";
 
 const Header = () => {
+  const [headerOpen, setHeaderOpen] = useState(false);
+  const [headerBackground, setHeaderBackground] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setHeaderBackground(true);
+    });
+  }, []);
+
   return (
-    <StyledHeader>
+    <StyledHeader isWhite={headerBackground}>
       <Wrapper>
-        <span className="logo">KIMYB</span>
-        <div>
-          <a href="#about">about</a>
-          <a href="#skill">skill</a>
-          <a href="#work">work</a>
-          <a href="#contact">contact</a>
-        </div>
+        <h1 className="logo">KIMYB</h1>
+        {headerOpen ? (
+          <StyledCloseIcon onClick={() => setHeaderOpen(false)} />
+        ) : (
+          <StyledMenuIcon onClick={() => setHeaderOpen(true)} />
+        )}
+        <LinkList className="linkList" headerOpen={headerOpen}>
+          <LinkItem href="#about">about</LinkItem>
+          <LinkItem href="#skill">skill</LinkItem>
+          <LinkItem href="#work">work</LinkItem>
+          <LinkItem href="#contact">contact</LinkItem>
+        </LinkList>
       </Wrapper>
     </StyledHeader>
   );
