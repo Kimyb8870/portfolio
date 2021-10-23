@@ -4,6 +4,7 @@ import palette from "../../../../lib/styles/palette";
 export const SectionTitleWrapper = styled.div`
   display: flex;
   margin: 0 auto;
+  justify-content: center;
 
   .MuiSvgIcon-root {
     width: 2rem;

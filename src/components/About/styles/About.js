@@ -12,7 +12,7 @@ export const Wrapper = styled(Responsive)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 4rem;
+  padding-top: 6rem;
   padding-bottom: 4rem;
 `;
 
