@@ -1,23 +1,26 @@
 import React from "react";
-import { StyledHero, StyledText, StyledTitle, Wrapper } from "./styles/Hero";
+import {
+  MainText,
+  StyledHero,
+  StyledText,
+  SubText,
+  TextWrapper,
+  Name,
+  BreakLine,
+} from "./styles/Hero";
 
 const Hero = () => {
   return (
     <StyledHero>
-      <Wrapper>
-        <StyledTitle>SAMPLE TITLE</StyledTitle>
-        <StyledText>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </StyledText>
-      </Wrapper>
+      <StyledText>
+        <TextWrapper>
+          <MainText>
+            프론트엔드 개발자
+            <BreakLine /> <Name>김영봉</Name>입니다
+          </MainText>
+          <SubText>기타 치는것과 수영하기 좋아하는 개발자입니다</SubText>
+        </TextWrapper>
+      </StyledText>
     </StyledHero>
   );
 };
