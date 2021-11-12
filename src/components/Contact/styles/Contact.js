@@ -26,6 +26,17 @@ export const EmailLink = styled.a`
   font-weight: 600;
 `;
 
+export const ResumeLink = styled.a`
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: ${palette.cyan[5]};
+  display: block;
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 600;
+  text-decoration: underline;
+`;
+
 export const GithubLink = styled.a`
   display: flex;
   justify-content: center;

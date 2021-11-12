@@ -5,6 +5,7 @@ import {
   StyledContact,
   Wrapper,
   GithubLink,
+  ResumeLink,
 } from "./styles/Contact";
 import SectionTitle from "../common/SectionTitle";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -21,6 +22,12 @@ const Contact = () => {
         {/* <GithubLink href="https://github.com/Kimyb8870" target="_blank">
           <GitHubIcon />
         </GithubLink> */}
+        <ResumeLink
+          href="https://atlantic-polo-602.notion.site/68a3d11072c24367a18571ce31c5b83f"
+          target="_blank"
+        >
+          이력서는 이쪽으로
+        </ResumeLink>
       </Wrapper>
     </StyledContact>
   );
