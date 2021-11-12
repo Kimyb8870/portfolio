@@ -80,8 +80,6 @@ export const BreakLine = styled.br`
 
   @media (max-width: 768px) {
     display: block;
-
-    }
   }
 `;
 
